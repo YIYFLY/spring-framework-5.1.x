@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,7 +23,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8aaf7cdc-df38-440e-86f5-2a83a7c99df7" name="Default Changelist" comment="" />
+    <list default="true" id="8aaf7cdc-df38-440e-86f5-2a83a7c99df7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/context/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/context/support/AbstractApplicationContext.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,12 +49,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spring" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -74,15 +82,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mybatis-3-3.4.x" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -130,6 +139,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\pc\AppData\Roaming\Subversion</configuration>
   </component>
@@ -153,11 +163,16 @@
       <workItem from="1589540750566" duration="11195000" />
       <workItem from="1592573540839" duration="112000" />
       <workItem from="1592714452545" duration="2235000" />
+      <workItem from="1593061886324" duration="385000" />
+      <workItem from="1613572945006" duration="258000" />
+      <workItem from="1613573716756" duration="744000" />
+      <workItem from="1613654860668" duration="232000" />
+      <workItem from="1613740568700" duration="659000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -183,75 +198,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1589437016244">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1589437016244" />
-    <state x="453" y="84" key="CommitChangelistDialog2" timestamp="1588786664091">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="453" y="84" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588786664091" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1592573652077">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1592573652077" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1592573652968">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592573652968" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1592573652968">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592573652968" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1592573652968">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592573652968" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1592573652968">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592573652968" />
-    <state width="1877" height="201" key="GridCell.Tab.1.bottom" timestamp="1589039388764">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="201" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589039388764" />
-    <state width="1877" height="201" key="GridCell.Tab.1.center" timestamp="1589039388764">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="201" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589039388764" />
-    <state width="1877" height="201" key="GridCell.Tab.1.left" timestamp="1589039388764">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="201" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589039388764" />
-    <state width="1877" height="201" key="GridCell.Tab.1.right" timestamp="1589039388764">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="201" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589039388764" />
-    <state x="453" y="168" width="1161" height="771" key="SettingsEditor" timestamp="1589387100961">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="453" y="168" width="1161" height="771" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589387100961" />
-    <state x="681" y="266" width="582" height="524" key="StructurePopup" timestamp="1589551925673">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="681" y="266" width="582" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1589551925673" />
-    <state x="744" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589465554279">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="744" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589465554279" />
-    <state x="661" y="256" width="766" height="538" key="find.popup" timestamp="1588930099146">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="661" y="256" width="766" height="538" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588930099146" />
-    <state x="334" y="123" key="new project wizard" timestamp="1588740310112">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="334" y="123" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1588740310112" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1589551910313">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1589551910313" />
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

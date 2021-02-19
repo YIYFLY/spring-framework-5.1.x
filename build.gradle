@@ -1,6 +1,7 @@
 buildscript {
 	repositories {
-		maven { url "https://repo.spring.io/plugins-release" }
+		// maven { url "https://repo.spring.io/plugins-release" }
+		maven { url "https://maven.aliyun.com/repository/spring-plugin" }
 	}
 	dependencies {
 		classpath("io.spring.gradle:propdeps-plugin:0.0.9.RELEASE")
@@ -147,8 +148,16 @@ configure(allprojects) { project ->
 	}
 
 	repositories {
-		maven { url "https://repo.spring.io/libs-release" }
-		mavenLocal()
+//        maven { url "https://repo.spring.io/libs-release" }
+//        mavenLocal()
+		//新增以下2个阿里云镜像
+		maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+		maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+		mavenCentral()
+		maven { url "https://repo.spring.io/libs-spring-framework-build" }
+		maven { url "https://repo.spring.io/milestone" } // Reactor
+		//新增spring插件库
+		maven { url "https://repo.spring.io/plugins-release" }
 	}
 
 	dependencies {
@@ -174,24 +183,24 @@ configure(allprojects) { project ->
 	}
 
 	ext.javadocLinks = [
-		"https://docs.oracle.com/javase/8/docs/api/",
-		"https://docs.oracle.com/javaee/7/api/",
-		"https://docs.oracle.com/cd/E13222_01/wls/docs90/javadocs/",  // CommonJ
-		"https://www.ibm.com/support/knowledgecenter/SS7JFU_8.5.5/com.ibm.websphere.javadoc.doc/web/apidocs/",
-		"https://glassfish.java.net/nonav/docs/v3/api/",
-		"https://docs.jboss.org/jbossas/javadoc/4.0.5/connector/",
-		"https://docs.jboss.org/jbossas/javadoc/7.1.2.Final/",
-		"https://tiles.apache.org/tiles-request/apidocs/",
-		"https://tiles.apache.org/framework/apidocs/",
-		"https://www.eclipse.org/aspectj/doc/released/aspectj5rt-api/",
-		"https://www.ehcache.org/apidocs/2.10.4/",
-		"https://www.quartz-scheduler.org/api/2.3.0/",
-		"https://fasterxml.github.io/jackson-core/javadoc/2.9/",
-		"https://fasterxml.github.io/jackson-databind/javadoc/2.9/",
-		"https://fasterxml.github.io/jackson-dataformat-xml/javadoc/2.9/",
-		"https://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/",
-		"https://junit.org/junit4/javadoc/4.12/",
-		"https://junit.org/junit5/docs/${junit5Version}/api/"
+			"https://docs.oracle.com/javase/8/docs/api/",
+			"https://docs.oracle.com/javaee/7/api/",
+			"https://docs.oracle.com/cd/E13222_01/wls/docs90/javadocs/",  // CommonJ
+			"https://www.ibm.com/support/knowledgecenter/SS7JFU_8.5.5/com.ibm.websphere.javadoc.doc/web/apidocs/",
+			"https://glassfish.java.net/nonav/docs/v3/api/",
+			"https://docs.jboss.org/jbossas/javadoc/4.0.5/connector/",
+			"https://docs.jboss.org/jbossas/javadoc/7.1.2.Final/",
+			"https://tiles.apache.org/tiles-request/apidocs/",
+			"https://tiles.apache.org/framework/apidocs/",
+			"https://www.eclipse.org/aspectj/doc/released/aspectj5rt-api/",
+			"https://www.ehcache.org/apidocs/2.10.4/",
+			"https://www.quartz-scheduler.org/api/2.3.0/",
+			"https://fasterxml.github.io/jackson-core/javadoc/2.9/",
+			"https://fasterxml.github.io/jackson-databind/javadoc/2.9/",
+			"https://fasterxml.github.io/jackson-dataformat-xml/javadoc/2.9/",
+			"https://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/",
+			"https://junit.org/junit4/javadoc/4.12/",
+			"https://junit.org/junit5/docs/${junit5Version}/api/"
 	] as String[]
 }
 

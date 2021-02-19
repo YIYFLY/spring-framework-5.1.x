@@ -535,7 +535,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
 	@Override
 	public void refresh() throws BeansException, IllegalStateException {
 		synchronized (this.startupShutdownMonitor) {
-			//为容器初始化做准备，包括当前启动时间，是否激活标识位，初始化属性源（property source）配置
+			//刷新上下文环境，初始化上下文环境，为容器初始化做准备，包括当前启动时间，是否激活标识位，初始化属性源（property source）配置
 			prepareRefresh();
 
 			// Tell the subclass to refresh the internal bean factory.
@@ -557,7 +557,8 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
 			// Prepare the bean factory for use in this context.
-			// 准备在这里使用 beanFactory，往beanFactory中添加一些后置管理器，一些要忽略注入的接口啥的，还扫描了bean
+			// 准备在这里使用 beanFactory，往beanFactory中添加一些后置管理器（添加功能：如@autowired，设置spel表达式解析器，设置编辑注册器），
+			// 一些要忽略注入的接口啥的，还扫描了bean
 			prepareBeanFactory(beanFactory);
 
 			try {
@@ -567,6 +568,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
 				 * 很重要的一个接口 完成 BeanDefinition 注册后调用接口可以对注册的 BeanDefinition 进行修改
 				 * 在 spring 的环境中调用（自定义的或者spring内部定义的）已经注册的 BeanFactoryPostProcessors
 				 * 最重要的就是调用 ConfigurationClassPostProcessor 的两个后置方法
+				 * 激活各种beanFactory处理器
 				 */
 				invokeBeanFactoryPostProcessors(beanFactory);
 
@@ -575,13 +577,13 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
 
 				// 国际化一些资源信息
 				initMessageSource();
-				// 初始化事件广播器
+				// 初始化上下文事件广播器
 				initApplicationEventMulticaster();
 
 				//todo 这里先注释掉 这个方法着重理解模板设计模式，因为在springboot中，这个方法是用来做内嵌tomcat启动的
 				// onRefresh();
 
-				// 检查和注册事件监听器
+				// 检查和注册事件监听器：在所有的bean中查找listener bean,然后 注册到广播器中
 				registerListeners();
 
 				/*
@@ -591,7 +593,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
 				 * */
 				finishBeanFactoryInitialization(beanFactory);
 
-				// 最后一步：发布相应的事件。
+				// 最后一步：发布相应的事件。发完成刷新过程，通知声明周期处理器刷新过程，同时发出ContextRefreshEvent通知别人
 				finishRefresh();
 			}
 
