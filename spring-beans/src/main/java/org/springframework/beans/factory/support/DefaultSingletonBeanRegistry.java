@@ -73,7 +73,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 	/**
 	 * Cache of singleton objects: bean name to bean instance.
 	 * 单例对象的缓存:通过beanName 获取bean实例对象
-	 * 一级缓存
+	 * 一级缓存，单例池
 	 */
 	private final Map<String, Object> singletonObjects = new ConcurrentHashMap<>(256);
 
